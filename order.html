@@ -14,6 +14,24 @@
 
 <body>
 	<div id="page">
+		<img src="delivery.gif" alt="Delivery" id="deliveryPic">
+
+		<div id="banner">
+			<div id="navigation">
+            <img src="links.gif" alt="Navigation" usemap="#navmap"  id="Navigation">
+            <map name="navmap">
+                <area shape="rect" coords="10,5,95,35" href="order.html" alt="Home">
+                <area shape="rect" coords="105,5,190,35" href="services.html" alt="Services">
+                <area shape="rect" coords="205,5,300,35" href="products.html" alt="Products">
+                <area shape="rect" coords="310,5,440,35" href="orderStatus.html" alt="Order Status">
+                <area shape="rect" coords="450,5,555,35" href="contactUs.html" alt="Contact Us">
+            </map>
+        </div>
+		</div>
+
+		<div id="sidebar">
+            <img src="swegga.jpg" alt="Swegga Fashion" style="height: 350px; width: 150px;">
+        </div>
 
 		<div id="main">
 			<table>
@@ -40,8 +58,8 @@
 							<option value="black">Black</option>
 						</select></td>
 					<td>150.95</td>
-					<td><input type="number" value="2"></td>
-					<td>R 301.90</td>
+					<td><input id="Female-Quantity" type="number" value="2"></td>
+					<td id="female-total"></td>
 				</tr>
 				<tr>
 					<td><a href="./male.html">Male Ski Jackets</a></td>
@@ -56,19 +74,28 @@
 							<option value="black">Black</option>
 						</select></td>
 					<td>180.95</td>
-					<td><input type="number" value="4"></td>
-					<td>R 723.80</td>
+					<td><input id="Male-Quantity" type="number" value="4"></td>
+					<td id="male-total"></td>
 				</tr>
 				<tr>
-					<td>Click to confirm and process your order</td>
-					<td>Total Price</td>
-					<td>R 1025.70</td>
+					<td colspan="4">Click to confirm and process your order</td>
+					<td><button type="button" onclick="calculateTotal()">Total Price</button></td>
+					<td id="total-price"></td>
 				</tr>
 			</table>
+			<footer>
+				<p class="copyright">&copy; 2024 Swegga Fashion - Lamla Nomnganga</p>
+			</footer>
 
 		</div>
 
 	</div>
+
+	<script src="./code.js"></script>
+
+
+
+	
 </body>
 
 </html>

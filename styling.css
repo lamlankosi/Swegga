@@ -6,12 +6,28 @@ body {
 	background-color: #4766B8;
     margin: 0;
 	padding: 0; }
-#main h1{
-	color: #4766B8;
+
+
+#main{
+    margin-left: 150px;
 
 }
+.deliveryPic{
+	height: 85px; 
+	width: 300px;
+}
+
+.Navigation{
+	height: 56px; 
+	width: 560px;
+}
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: white;
+}
 #page {
-	width: 710px;
+	width: 730px;
 	background-color: white;
 	margin: 10px auto;
 	border: 2px solid black;
@@ -57,3 +73,10 @@ td, th {
 	
 .alignRight {
 	text-align: right; }
+
+footer {
+	margin-top: 0.5rem;
+	border-top: 2px solid gray;
+	padding: 0.7rem;
+	clear: both;
+}
